@@ -1,0 +1,20 @@
+/**index.wxss**/
+.matrix{width: 100%;margin: 0 auto 1em;background-color: #fff;height: 40%;padding: 1%;}
+.matrix .nav-btn{width: 50%;height: 50%;float: left;overflow: hidden;padding: 0;}
+.matrix button.nav-btn::after{display: none;}
+.matrix .matrix-btn{float: left; height: 94%;line-height: 36rpx;box-sizing: border-box;color: #fff;margin:4% 2%;border-radius: 5px;}
+.matrix .matrix-btn .title{font-size: 32rpx;float: left;margin:30% 0 0 5%;font-weight: bold}
+.matrix .matrix-btn .info{font-size: 28rpx;float: left;margin:15rpx 0 0 5%;}
+.matrix .matrix-btn.kswz{background-color:#87bbe7; }
+.matrix .matrix-btn.yygh{background-color:#979be6;}
+.matrix .matrix-btn.gtpp{background-color:#72c08a;}
+.matrix .matrix-btn.lllx{background-color:#39cdac;}
+.matrix .matrix-btn.user{background-color:#39cdac;}
+.matrix .matrix-btn icon{display: block; width: 120rpx;height: 120rpx;float: right;background-size: 60% auto;margin:5% 5% 0 0;background-position: center;background-color: #fff;border-radius: 50%;background-repeat: no-repeat;}
+.matrix .matrix-btn.kswz icon{background-image: url(https://xcx.yzw0525.com/images/index_02.svg);}
+.matrix .matrix-btn.yygh icon{background-image: url(https://xcx.yzw0525.com/images/index_03.svg);}
+.matrix .matrix-btn.gtpp icon{background-image: url(https://xcx.yzw0525.com/images/index_04.svg);}
+.matrix .matrix-btn.lllx icon{background-image: url(https://xcx.yzw0525.com/images/index_05.svg);}
+.matrix .matrix-btn.user icon{background-image: url(https://xcx.yzw0525.com/images/matrix_btn_user.svg);}
+.matrix::after,.diagnosis::after,.ask-icon::after,.comment::after{content: "";display: block; width: 0;height: 0;clear: both;}
+

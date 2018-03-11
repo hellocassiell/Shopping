@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  
+
+  <view class="matrix">
+    <navigator url="/pages/online/online" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn kswz">
+        <icon class="kswz"/>
+        <view class="title">线上问诊</view>
+        <view class="info">足不出户 咨询专家</view>
+      </view>
+    </navigator>
+    <navigator url="/pages/online/online" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn yygh">
+        <icon class="yygh"/>
+        <view class="title">预约面诊</view>
+        <view class="info">无需排队 即刻预约</view>
+      </view>
+    </navigator>
+     <button open-type="contact" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn kswz">
+        <icon class="kswz"/>
+        <view class="title">客服咨询</view>
+        <view class="info">了解更多</view>
+      </view>
+    </button>
+  </view>
+
+  
+ 
+  <view class="phone" bindtap="onMakePhone"></view>
+</view>
