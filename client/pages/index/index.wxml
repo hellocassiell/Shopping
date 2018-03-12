@@ -1,32 +1,26 @@
-<!--index.wxml-->
+<!--online.wxml-->
 <view class="container">
-  
-
-  <view class="matrix">
-    <navigator url="/pages/online/online" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
-      <view class="matrix-btn kswz">
-        <icon class="kswz"/>
-        <view class="title">线上问诊</view>
-        <view class="info">足不出户 咨询专家</view>
-      </view>
-    </navigator>
-    <navigator url="/pages/online/online" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
-      <view class="matrix-btn yygh">
-        <icon class="yygh"/>
-        <view class="title">预约面诊</view>
-        <view class="info">无需排队 即刻预约</view>
-      </view>
-    </navigator>
-     <button open-type="contact" class="nav-btn active" hover-class="nav-hover">
-      <view class="matrix-btn kswz">
-        <icon class="kswz"/>
-        <view class="title">客服咨询</view>
-        <view class="info">了解更多</view>
-      </view>
-    </button>
-  </view>
-
-  
  
-  <view class="phone" bindtap="onMakePhone"></view>
+  
+  <form bindsubmit="MyfromSubmit" report-submit="true">
+  <view class="Myfrom clear">
+    <view class="form-text">
+      <label>您的姓名：</label>
+      <input type="text" placeholder="" name="patients" maxlength="32" placeholder-class="input-placeholder" class="from-input" />
+    </view>
+    <view class="form-text">
+      <label>您的电话：</label>
+      <input type="text" placeholder="" name="tel" maxlength="32" placeholder-class="input-placeholder" class="from-input" />
+    </view>
+  </view>
+  <view class="form-textarea">
+  <label>您的病情：</label>
+      <textarea maxlength="200" name="content" placeholder-class="input-placeholder" placeholder="详细描述您的症状或者病情" />
+  </view>
+  <view class="form-submit">
+      <button size="default" loading="{{loading}}" class="online-submit" form-type="submit">加密提交</button>
+  </view>
+  </form>
+  
+  
 </view>

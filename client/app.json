@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/addCgi/addCgi",
-    "pages/online/online"
+    "pages/addCgi/addCgi"
+    
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
